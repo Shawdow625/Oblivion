@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080912" />
+  <meta name="description" content="Oblivion is an independent Windows launcher for Minecraft: Java Edition, currently in active development." />
+  <title>Oblivion — Independent Minecraft Launcher</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; color: #e9e8f7; background: radial-gradient(ellipse 80% 55% at 50% -12%, #5130a059, transparent), #080912; }
+    main { width: min(1020px, calc(100% - 40px)); margin: 0 auto; }
+    header { display: flex; align-items: center; justify-content: space-between; padding: 30px 0; gap: 16px; }
+    .brand { font-weight: 900; letter-spacing: .19em; color: #faf8ff; font-size: 1rem; }
+    .tag { color: #bdb3d5; font-size: .78rem; padding: 9px 13px; border: 1px solid #554475; border-radius: 999px; background: #ffffff08; }
+    .hero { text-align: center; padding: 110px 0 84px; }
+    .eyebrow { display: inline-block; color: #c7b2ff; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; font-size: .73rem; }
+    h1 { margin: 16px 0 10px; font-size: clamp(3.7rem, 12vw, 8rem); line-height: .95; letter-spacing: -.08em; background: linear-gradient(180deg, #fff, #d9c6ff 65%, #8b71cd); color: transparent; background-clip: text; -webkit-background-clip: text; text-shadow: 0 20px 85px #8951ee44; }
+    .subtitle { margin: 24px auto 0; max-width: 620px; color: #c1bdd0; line-height: 1.8; font-size: clamp(1rem, 2.5vw, 1.22rem); }
+    .status { display: inline-block; margin-top: 28px; border: 1px solid #6852a5; background: #a078f317; padding: 10px 18px; border-radius: 999px; color: #dfd1ff; font-size: .85rem; font-weight: 650; }
+    section { padding: 35px 0; }
+    h2 { font-size: 1.55rem; letter-spacing: -.025em; margin-bottom: 19px; }
+    p { color: #bdbace; line-height: 1.8; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .card { background: linear-gradient(160deg, #201a32b8, #10111b); border: 1px solid #373049; border-radius: 18px; padding: 26px; }
+    .icon { font-size: 24px; color: #b69bff; }
+    .card h3 { margin: 18px 0 8px; }
+    .card p { font-size: .92rem; line-height: 1.65; margin: 0; }
+    .review { background: #ffffff08; border: 1px solid #363146; border-radius: 20px; padding: 30px; }
+    .review strong { color: white; }
+    code { color: #d8c8ff; font-size: .9rem; overflow-wrap: anywhere; }
+    footer { margin-top: 50px; border-top: 1px solid #ffffff18; text-align: center; color: #9690a8; padding: 30px 5px 45px; font-size: .82rem; line-height: 1.7; }
+    @media(max-width: 700px) { .hero { padding: 85px 0 58px; } .cards { grid-template-columns: 1fr; } .card { padding: 21px; } header { padding: 24px 0; } .tag { font-size: .7rem; } .review { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><div class="brand">◈ OBLIVION</div><div class="tag">WINDOWS · JAVA EDITION</div></header>
+    <div class="hero">
+      <span class="eyebrow">An independent desktop launcher</span>
+      <h1>OBLIVION</h1>
+      <p class="subtitle">A modern Windows launcher built to manage Minecraft: Java Edition instances and provide legitimate Microsoft account authentication.</p>
+      <div class="status">◉ In active development · Not yet publicly released</div>
+    </div>
+    <section>
+      <h2>Built for a better launcher experience</h2>
+      <div class="cards">
+        <div class="card"><div class="icon">◇</div><h3>Secure sign-in</h3><p>Designed for Microsoft OAuth 2.0 with PKCE, Xbox Live, XSTS and official Minecraft Services authentication.</p></div>
+        <div class="card"><div class="icon">▦</div><h3>Instance management</h3><p>Manage Minecraft installations and launcher configurations in one desktop interface.</p></div>
+        <div class="card"><div class="icon">◎</div><h3>Ownership checks</h3><p>Authenticate through official services and respect game entitlements, licensing and security requirements.</p></div>
+      </div>
+    </section>
+    <section>
+      <h2>Project details</h2>
+      <div class="review">
+        <p><strong>Platform:</strong> Windows desktop &nbsp; · &nbsp; <strong>Technology:</strong> Tauri, Rust, React, TypeScript</p>
+        <p><strong>Microsoft Application ID:</strong> <code>babf65d7-c2fc-4875-a4ce-35dab75db9db</code></p>
+        <p><strong>Native OAuth redirect:</strong> <code>http://localhost/oauth/callback</code></p>
+        <p><strong>Minecraft Services:</strong> AppID approval required and not yet granted. The launcher does not bypass authentication, licensing, ownership checks or safety features.</p>
+      </div>
+    </section>
+    <footer>Oblivion is an independent third-party project, not affiliated with or endorsed by Mojang Studios or Microsoft. Minecraft and related trademarks belong to their respective owners.</footer>
+  </main>
+</body>
+</html>
